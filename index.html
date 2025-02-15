@@ -15,10 +15,8 @@
 <body>\
     <h2>Submit Your Info</h2>\
     <form id="myForm">\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0         <input type="email" id="email" placeholder="Your Email" required><br>\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0         <input type="text" id="name" placeholder="Your Name" required><br>\
+        <input type="email" id="email" placeholder="Your Email" required><br>\
+        <input type="text" id="name" placeholder="Your Name" required><br>\
         <textarea id="message" placeholder="Your Message" required></textarea><br>\
         <button type="submit">Submit</button>\
     </form>\
@@ -31,7 +29,7 @@
                 message: document.getElementById("message").value\
             \};\
 \
-            fetch("YOUR_DEPLOYMENT_URL", \{\
+            fetch("https://script.google.com/macros/s/AKfycby5oXDDvl2H5xQSdH8Ml5Keu4ouLRrZGNReSSPVXK6lP97JIdD1LGGTgHdZlpvfovDfJQ/exec", \{\
                 method: "POST",\
                 body: JSON.stringify(formData),\
                 headers: \{ "Content-Type": "application/json" \}\
